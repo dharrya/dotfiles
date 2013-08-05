@@ -1,0 +1,13 @@
+#!/bin/zsh
+
+mypacman() {
+    echo `/home/lily/.xmonad/script/pac_check`    
+}
+mydropbox() {
+    echo `dropbox status | head -n 1`
+}
+
+while true; do
+    print " ^i(/home/lily/.xmonad/icon/arch.xbm) ^fg(\#ffffff)$(mypacman) ^fg(\#c28d1d)\ ^i(/home/lily/.xmonad/icon/cat.xbm) ^fg(\#ffffff)$(mydropbox)"
+    sleep 1
+done

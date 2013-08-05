@@ -1,0 +1,10 @@
+#! /bin/bash
+
+normal_bg_color="#1a1a1a"
+normal_fg_color="#ffffff"
+selected_bg_color="#1a1a1a"
+selected_fg_color="#c28d1d"
+
+dmenu_run -i -l 0 \
+  -nb ${normal_bg_color} -nf ${normal_fg_color} \
+  -sb ${selected_bg_color} -sf ${selected_fg_color}

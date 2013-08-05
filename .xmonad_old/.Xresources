@@ -1,0 +1,70 @@
+Xcursor.theme: Vanilla-DMZ
+
+Xft.dpi:          96
+Xft.antialias:    true
+Xft.hinting:      true
+Xft.rgba:         rgb
+Xft.autohint:     false
+Xft.hintstyle:    hintfull
+Xft.lcdfilter:    lcddefault
+
+
+!Dzen2 Config
+URxvt.font: xft:terminus:pixelsize=11,\
+                        [codeset=JISX0208]xft:IPAGothic,\
+                        [codeset=KSC5601]xft:Baekmuk Gulim, \
+                        xft:FreeMono:antialias=false
+URxvt.boldFont: xft:terminus:pixelsize=11,\
+                        [codeset=JISX0208]xft:IPAGothic,\
+                        [codeset=KSC5601]xft:Baekmuk Gulim, \
+                        xft:FreeMono:antialias=false
+
+!RXVT Unicode Config
+URxvt.font: xft:terminus:pixelsize=11,\
+                        [codeset=JISX0208]xft:IPAGothic,\
+                        [codeset=KSC5601]xft:Baekmuk Gulim, \
+                        xft:FreeMono:antialias=false
+URxvt.boldFont: xft:terminus:pixelsize=11,\
+                        [codeset=JISX0208]xft:IPAGothic,\
+                        [codeset=KSC5601]xft:Baekmuk Gulim, \
+                        xft:FreeMono:antialias=false
+
+URxvt.perl-ext:
+URxvt.perl-ext-common:
+
+urxvt.termName:       rxvt-256color
+urxvt.depth:          32
+urxvt.geometry:       85x28
+urxvt.scrollBar:      false
+
+!Color1 : H=-22 S:61 V:74
+!Color2 : Hr=-2 S:43 V:88
+
+URxvt.background:     #1a1a1a
+URxvt.foreground:     #ffffff
+URxvt.cursorColor:    #cb8814
+
+!black
+*color0:         #575757
+*color8:         #757575
+!red (H:0)
+*color1:         #cb1456
+*color9:         #e32d72
+!green (H:120)
+*color2:         #57cb14
+*color10:        #70e32d
+!brown/yellow (H:60)
+*color3:         #cb8814
+*color11:        #e3a02d
+!blue (H:240)
+*color4:         #1457cb
+*color12:        #2d70e3
+!magenta (H:320)
+*color5:         #c514cb
+*color13:        #dd2de3
+!cyan (H:180)
+*color6:         #14cb88
+*color14:        #2de3a0
+!white (S:0)
+*color7:         #dfdfdf
+*color15:        #ffffff

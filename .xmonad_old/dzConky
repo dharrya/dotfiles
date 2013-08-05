@@ -1,0 +1,19 @@
+background yes
+out_to_console yes
+out_to_x no
+update_interval 2
+update_interval_on_battery 10
+ 
+TEXT
+^fg(\#707068)^i(/home/dharrya/.xmonad/dzen2/aw/left.xbm)\
+^fg(\#707070)vol: ^fg(\#ab1048)${exec amixer get Master| egrep -o "[0-9]+%" | head -1 | egrep -o "[0-9]*"}%\
+^fg(\#707068)^i(/home/dharrya/.xmonad/dzen2/aw/spacer.xbm)\
+^fg(\#707070)batt: ^fg(\#ab1048)${battery_percent}%\
+^fg(\#707068)^i(/home/dharrya/.xmonad/dzen2/aw/spacer.xbm)\
+^fg(\#707070)cpu: ^fg(\#ab1048)${cpu cpu0}% ${cpu cpu1}% ${cpu cpu2}% ${cpu cpu3}%\
+^fg(\#707068)^i(/home/dharrya/.xmonad/dzen2/aw/spacer.xbm)\
+^fg(\#707070)mem: ^fg(\#ab1048)${memperc}%\
+^fg(\#707068)^i(/home/dharrya/.xmonad/dzen2/aw/spacer.xbm)\
+^fg(\#707070)${time %m.%d.%Y} ^fg(\#707072) (((  ^fg(\#ab1048)${time %I:%M %P} ^fg(\#707072) )))\
+^fg(\#707068)^i(/home/dharrya/.xmonad/dzen2/aw/right.xbm)
+

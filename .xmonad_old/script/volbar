@@ -1,0 +1,19 @@
+#!/bin/zsh
+# vim:ft=zsh ts=4
+
+myvol() {
+
+    percentage=`amixer |grep -A 6 \'PCM\' |awk {'print $5'} |grep -m 1 % |sed -e 's/[][%]//g'`
+    ismute=`amixer |grep -A 6 \'Master\'|awk {'print $6'} |grep -m 1 "[on|off]" | sed -e 's/[][]//g'`
+
+    if [[ $ismute == "off" ]]; then
+        print -n "^i(/home/lily/.xmonad/icon/spkr_02.xbm) $(echo "0" | gdbar -fg '#cb1456' -bg '#707070' -h 6 -w 50)"
+    else
+        print -n "^i(/home/lily/.xmonad/icon/spkr_01.xbm) $(echo $percentage | gdbar -fg '#cb1456' -bg '#707070' -h 6 -w 50)"
+    fi
+}
+
+while true; do
+    print "$(myvol)"
+    sleep 1
+done

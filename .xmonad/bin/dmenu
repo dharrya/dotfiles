@@ -1,0 +1,4 @@
+#!/bin/sh
+
+/usr/bin/dmenu  \
+  -nb '#000000' -nf '#FFFFFF' -sb '#7C7C7C' -sf '#CEFFAC'

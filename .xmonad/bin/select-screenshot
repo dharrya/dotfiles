@@ -1,0 +1,3 @@
+#!/bin/sh
+
+sleep 0.2; scrot -s "$HOME/screenshots/%Y-%m-%d-%H%M%S.png" -e "xdg-open \$f"

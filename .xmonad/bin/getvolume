@@ -1,0 +1,8 @@
+#!/bin/bash
+
+ismute=`amixer |grep -A 6 \'Master\'|awk {'print $6'} |grep -m 1 "[on|off]" | sed -e 's/[][]//g'`
+if [[ $ismute == "off" ]]; then
+	amixer get Master | egrep -o "[0-9]+%"
+else
+	echo "Mute"
+fi

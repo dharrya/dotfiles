@@ -8,7 +8,7 @@ Config {
     
     , sepChar = "%"
     , alignSep = "}{"
-    , template = "%StdinReader% }{ [ %cpu% ][ %coretemp% ][ %memory% ][ %battery% ][ %wlp2s0wi% %wlp2s0% ][ %disku% ][ <icon=/home/dharrya/.xmonad/icons/xbm8x8/vol.xbm/> %volume% ] %date%"
+    , template = "%StdinReader% }{ [ %cpu% ][ %coretemp% ][ %memory% ][ %battery% ][ %wlp2s0wi% %wlp2s0% ][ %disku% ][ %volume% ] %date%"
 
     , commands = [
         Run Cpu

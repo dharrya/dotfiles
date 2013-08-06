@@ -6,4 +6,5 @@ xsetroot -cursor_name 'left_ptr' &
 xrdb -merge ~/.Xdefaults &
 ~/.xmonad/bin/tray &
 ~/.fehbg &
+~/scripts/xrandr
 

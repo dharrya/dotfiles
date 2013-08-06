@@ -89,11 +89,11 @@ myFocusedBorderColor = "#EE9A00"
 -- Colors for text and backgrounds of each tab when in "Tabbed" layout.
 tabConfig = defaultTheme {
     activeBorderColor = "#7C7C7C",
-    activeTextColor = "#CEFFAC",
-    activeColor = "#000000",
+    activeTextColor = "#EE9A00",
+    activeColor = "#222222",
     inactiveBorderColor = "#7C7C7C",
-    inactiveTextColor = "#EEEEEE",
-    inactiveColor = "#000000"
+    inactiveTextColor = "#bbbbbb",
+    inactiveColor = "#222222"
 }
 
 -- Color of current window title in xmobar.
@@ -241,8 +241,8 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
      io (exitWith ExitSuccess))
 
   -- Restart xmonad.
-  --, ((modMask, xK_q),
-  --   restart "xmonad" True)
+  , ((modMask .|. shiftMask, xK_r),
+     restart "xmonad" True)
   ]
   ++
  

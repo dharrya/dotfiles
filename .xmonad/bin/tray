@@ -1,4 +1,4 @@
 #!/bin/sh
 
-trayer --edge top --align right --margin 0 --width 120 --widthtype pixel --height 12 \
-    --padding 0 --tint 0x000000 --transparent true --alpha 0
+trayer --edge top --align right --margin 0 --width 120 --widthtype pixel --height 18 \
+    --padding 0 --tint 0x222222 --transparent true --alpha 0

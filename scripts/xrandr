@@ -35,3 +35,5 @@ else
 fi
 
 sh ~/.fehbg
+killall trayer
+~/.xmonad/bin/tray &

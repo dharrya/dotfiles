@@ -12,28 +12,45 @@ Config {
 
     , commands = [
         Run Cpu
-            ["-t","<icon=/home/dharrya/.xmonad/icons/xbm8x8/cpu.xbm/> <total>%","-L","3","-H","50","--normal","green","--high","red"]
+            ["-t","<icon=/home/dharrya/.xmonad/icons/xbm8x8/cpu.xbm/> <total>%",
+            "-L","20","-H","60",
+            "-l","#ceffac","-n","#ffffcc","-h","#ffb6b0"]
             10
         
+        , Run CoreTemp
+            ["-t","<icon=/home/dharrya/.xmonad/icons/xbm8x8/temp.xbm/> <core0>C",
+            "-L","40","-H","60",
+            "-l","#ceffac","-n","#ffffcc","-h","#ffb6b0"]
+            50
+
         , Run Memory
-            ["-t","<icon=/home/dharrya/.xmonad/icons/xbm8x8/mem.xbm/> <usedratio>%","-H","7000","-L","2048","-h","#FFB6B0","-l","#CEFFAC","-n","#FFFFCC"]
+            ["-t","<icon=/home/dharrya/.xmonad/icons/xbm8x8/mem.xbm/> <usedratio>%",
+            "-H","7000","-L","2048",
+            "-l","#ceffac","-n","#ffffcc","-h","#ffb6b0"]
             10
         
         , Run Battery
-            ["-t","<icon=/home/dharrya/.xmonad/icons/xbm8x8/bat_full_01.xbm/> <left>%","-L","25","-H","75","--low","#FF0000","--normal","#F9FF00","--high","#00FF00"]
+            ["-t","<icon=/home/dharrya/.xmonad/icons/xbm8x8/bat_full_01.xbm/> <left>%",
+            "-L","25","-H","75",
+            "-l","#ffb6b0","-n","#ffffcc","-h","#ceffac"]
             600
         
         , Run Wireless "wlp2s0"
-            ["-t","<icon=/home/dharrya/.xmonad/icons/xbm8x8/wifi_02.xbm/> <quality>%","-L","32","-H","80","--low","#FF0000","--normal","#F9FF00","--high","#00FF00"]
+            ["-t","<icon=/home/dharrya/.xmonad/icons/xbm8x8/wifi_02.xbm/> <quality>%",
+            "-L","32","-H","80",
+            "-l","#ffb6b0","-n","#ffffcc","-h","#ceffac"]
             10
 
         , Run Network "wlp2s0"
-            ["-t","<rx>, <tx>","-H","200","-L","10","-h","#FFB6B0","-l","#CEFFAC","-n","#FFFFCC","-S","True"]
+            ["-t","<rx>, <tx>",
+            "-L","10","-H","200","-S","True",
+            "-l","#ceffac","-n","#ffffcc","-h","#ffb6b0"]
             10
         
         , Run DiskU 
             [("/home", "<icon=/home/dharrya/.xmonad/icons/xbm8x8/diskette.xbm/> <free>")]
-            ["-L", "20", "-H", "100", "-m", "1", "-p", "3", "-h","#FFB6B0","-l","#CEFFAC","-n","#FFFFCC"]
+            ["-L", "20", "-H", "100", "-m", "1", "-p", "3",
+            "-l","#ffb6b0","-n","#ffffcc","-h","#ceffac"]
             10
 
         , Run Com 

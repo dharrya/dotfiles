@@ -1,0 +1,3 @@
+sudo pacman -S xmonad xmonad-contrib xmobar trayer scrot dmenu dmenu_path_c cabal-install
+cabal update
+cabal install --global yeganesh

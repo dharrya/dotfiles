@@ -1,8 +1,8 @@
-#!/bin/bash
+#!/bin/sh
 
 ismute=`amixer |grep -A 6 \'Master\'|awk {'print $6'} |grep -m 1 "[on|off]" | sed -e 's/[][]//g'`
 if [[ $ismute == "on" ]]; then
-	amixer get Master | egrep -o "[0-9]+%"
+	echo "<fc=#ceffac>$(amixer get Master | egrep -o '[0-9]+%')</fc>"
 else
-	echo "Mute"
+	echo "<fc=#ffb6b0>Mute</fc>"
 fi

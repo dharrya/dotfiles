@@ -32,7 +32,7 @@ Config {
             10
         
         , Run DiskU 
-            [("/", "<icon=/home/dharrya/.xmonad/icons/xbm8x8/diskette.xbm/> <free>")]
+            [("/home", "<icon=/home/dharrya/.xmonad/icons/xbm8x8/diskette.xbm/> <free>")]
             ["-L", "20", "-H", "100", "-m", "1", "-p", "3", "-h","#FFB6B0","-l","#CEFFAC","-n","#FFFFCC"]
             10
 

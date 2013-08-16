@@ -53,9 +53,9 @@ myManageHook = composeAll
     , className =? "MPlayer"        --> doFloat
     , className =? "Vlc"            --> doFloat
     , className =? "Skype"          --> doFloat
-    , className =? "Chromium"       --> doShift "1:web"
+    --, className =? "Chromium"       --> doShift "1:web"
     , className =? "Thunderbird"    --> doShift "1:web"
-    , className =? "Subl3"          --> doShift "3:code"
+    --, className =? "Subl3"          --> doShift "3:code"
     , className =? "VirtualBox"     --> doShift "5:vm"
     , isFullscreen --> (doF W.focusDown <+> doFullFloat)]
 
@@ -183,11 +183,11 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
 
   -- Move focus to the next window.
   , ((modMask, xK_Left),
-     windows W.focusDown)
+     windows W.focusUp)
 
   -- Move focus to the previous window.
   , ((modMask, xK_Right),
-     windows W.focusUp  )
+     windows W.focusDown)
 
   -- Move focus to the next window.
   , ((modMask, xK_j),
@@ -195,7 +195,7 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
 
   -- Move focus to the previous window.
   , ((modMask, xK_k),
-     windows W.focusUp  )
+     windows W.focusUp)
 
   -- Move focus to the master window.
   , ((modMask, xK_m),
@@ -204,6 +204,14 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
   -- Swap the focused window and the master window.
   , ((modMask, xK_Return),
      windows W.swapMaster)
+
+  -- Swap the focused window with the next window.
+  , ((modMask .|. shiftMask, xK_Left),
+     windows W.swapUp  )
+
+  -- Swap the focused window with the previous window.
+  , ((modMask .|. shiftMask, xK_Right),
+     windows W.swapDown    )
 
   -- Swap the focused window with the next window.
   , ((modMask .|. shiftMask, xK_j),

@@ -1,0 +1,15 @@
+[user]
+	name = Dharrya
+	email = dharrya@gmail.com
+[push]
+	default = simple
+[color]
+	ui = true
+[credential]
+	helper = cache --timeout=3600
+[alias]
+	st = status
+	mersq = merge --squash
+	free = branch -D
+[help]
+	autocorrect = 1

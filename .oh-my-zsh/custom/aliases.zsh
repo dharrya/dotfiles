@@ -55,6 +55,8 @@ alias srcz='source ~/.zshrc'
 alias sl='ls'
 # misc
 
+alias mdhtml='pandoc $1 -s --highlight-style tango -o $1.html'
+
 alias pong='ping -c 3 www.google.com'
 alias getxbf='tmux show-buffer | xclip -i -se p,c'
 alias psu='ps axu'

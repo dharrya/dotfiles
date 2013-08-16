@@ -1,6 +1,5 @@
 Config {
     font = "xft:Terminus-9"
-    --font = "-*-terminus-*-r-*-*-12-*-*-*-*-*-*-*"
     , bgColor = "#222222"
     , fgColor = "#bbbbbb"
     , position = Static { xpos = 0, ypos = 0, width = 1480, height = 18 }
